@@ -1,0 +1,139 @@
+#+TITLE: 
+#+AUTHOR: Matthew Brigida, Ph.D.
+#+LATEX_HEADER: \usepackage[T1]{fontenc}
+#+LATEX_HEADER: \usepackage{graphicx}  
+#+LATEX_HEADER: \usepackage{xcolor}    
+#+LATEX_HEADER: \usepackage[]{hyperref}
+#+OPTIONS: toc:nil
+
+#+BEGIN_CENTER
+CLARION UNIVERSITY OF PENNSYLVANIA\\
+COLLEGE OF BUSINESS ADMINISTRATION\\
+DEPARTMENT OF FINANCE
+\\
+*Risk Management and Derivatives* \\
+*FIN  576*\\
+*Spring 2017*\\
+#+END_CENTER
+
+\vspace{6.5pt}
+\noindent *Instructor:* Dr. Matthew Brigida\\
+*Office* online\\
+*Office Hours:*  Online:  Monday, Tuesday, and Wednesday, 1:00---2:45pm \\
+*Email:*  \textcolor{blue}{mbrigida@clarion.edu} \\
+*Course Day/Time:* online\\
+\\
+*Class Location:* online \\
+\\
+*Text:* /Investments/, by Bodie, Kane, and Marcus, 8th edition, ISBN:  978-0-07-338237-1 \\
+\hspace*{20pt} **However, you are free to use earlier editions (my original lecture notes are from the 6th edition which you can buy used (for less than \$10) on Amazon, ISBN: 0072861789)\\
+#+BEGIN_CENTER
+*COURSE DESCRIPTION*
+#+END_CENTER  
+An introductory survey to the fundamental principles of managing risk, including through the use of derivative contracts. The learning outcomes for this course are summarized below:
+\begin{enumerate}
+\item Understanding how to measure and report risk.
+\item Understand fundamental approaches to managing differing types of risk, including the use of derivative contracts.
+\item Have a practical understanding of how to use option and futures/forward contracts to manage risk.
+\end{enumerate}
+#+BEGIN_CENTER
+*ACADEMIC HONESTY POLICY*
+#+END_CENTER 
+Academic dishonesty will not be tolerated in this class. Cheating
+on quizzes, examinations, and other forms of dishonesty (e.g., plagiarism, collusion, and
+falsification of data) will be dealt with in a serious and formal manner. The penalty for academic
+dishonesty in this class will be course failure. That is, any student who is found to be cheating
+or engaged in other academically dishonest behavior will be failed for this course for this
+semester. Course withdrawals to avoid such a failure will not be permitted. As a student, you
+have a responsibility to become familiar with the Academic Honesty Policy found in the Student
+Rights, Regulations, and Procedures Handbook.\\
+#+BEGIN_CENTER
+*BSBA LEARNING GOALS \& OBJECTIVES*
+#+END_CENTER
+\begin{itemize}
+\item Goal 1.0: Demonstrate Business Disciplinary Competence.  Assessed by: The exams, homeworks and projects will evaluate a core area of finance: Managing risk.
+\item Goal 3.0 (Objectives 3.1 and 3.2):  Communicate Effectively Orally and in Written Form.  Assessed by: The presentations of student created hedged positions.
+\item Goal 4.0 (Objectives 4.1 and 4.3): Demonstrate Analytical Thinking Skills.  Assessed by: Students will analytically calculate an implement optimal hedge ratios.
+\item Goal 5.0: Understand Global Issues in the Functional Areas of Business.  Assessed by: Understanding and implementing hedges of cash flows from foreign operations. This is evaluated through the exams, homeworks, and projects.
+\item Goal 6.0 (Objectives 6.1 and 6.3):  Demonstrate Effective Use of Technology and Data Analysis.  Assessed by: In both homeworks and the presentation, students will analyze data and communicate conclusions using real-time financial trading software and Excel. 
+\end{itemize}
+#+BEGIN_CENTER
+*EXAMS*
+#+END_CENTER 
+There will be one take-home exam (a final). The exam will mainly be comprised of short-answer questions, computations, and simple proofs.  More involved questions will be worth more points.  \\
+\\
+*Exam Rules*\\
+\\
+You may discuss the exam with other students.  In fact, such discussions will help you understand the material, and are therefore encouraged.  You must write-up your exam on your own however.  If you simply copy another students' work, you will receive a 0.
+#+BEGIN_CENTER
+*DISCUSSION*
+#+END_CENTER
+There will be a discussion board for each two week period.  I'll post the discussion questions/topics by Sunday evening, and you'll have until 2pm on the second following Sunday to post your response.  You are required to make one post per week.  There may be fewer questions than students in the course, so you should feel free to respond to other students' posts.  Just be sure to improve their answer---add relevant information or examples.  Don't just write ``Great post!''.  
+#+BEGIN_CENTER
+*PROJECTS*
+#+END_CENTER
+Project 1:  Creating Futures with Options\\
+Project 2:  American Option Pricing \\
+Project 3:  Interest Rate Swaps \\
+Project 4:  Bond Portfolio Immunization
+#+BEGIN_CENTER
+*COURSE COMMUNICATION*
+#+END_CENTER
+All important/official announcements will be posted on Blackboard and emailed to each student's Clarion University email account.  I will post helpful information to: [[http://www.complete-markets.com][Complete Markets]]. To see information relating to your course type "FIN 576" in the search bar at the upper left of the web page.  Some examples of helpful information are spreadsheets which assist in studying for exams or completing discussion posts, answers to questions other students have asked (of course I will not include who asked the question), and useful R code.
+
+| *GRADING:*   |     |
+|--------------+-----|
+| Project 1    |  20 |
+| Project 2    |  20 |
+| Project 3    |  20 |
+| Discussion   |  30 |
+| Final Exam   |  10 |
+| Total Points | 100 |
+|--------------+-----|
+
+#+BEGIN_CENTER
+*Final grades will be assigned according to the following scale:*
+#+END_CENTER
+
++ 90 - 100 A
++ 80 - 89.9 B
++ 70 - 79.9 C
++ 60 - 69.9 D
++ $<$ 60 F
+
+#+BEGIN_CENTER
+*GENERAL NOTES:*
+#+END_CENTER
+
++ Attending class, and reading the text is required.
++ All exams will be open book.
++ There will be no make up exams or extra points assignments.
++ Cheating will result in prosecution to the fullest extent possible under university rules.
++ You will be responsible for any material covered in class that is not in your text.
++ You should bring your text to class.
++ You are expected to be on time for class. 
++  {\bf Adding or Dropping the Course:}  To add or drop the course the student should consult the university guidelines and withdrawal dates.  The course instructor is not involved in a student's adding or withdrawing from the course.
+
+\pagebreak
+#+BEGIN_CENTER
+*TENTATIVE OUTLINE*
+#+END_CENTER
++ 3/21:  Chapter 3
++ 3/28:  Chapter 16
++ 4/3:  Chapter 20 
++ 4/10: Chapter 21 
++ 4/17:  Chapter 22
++ 4/24:  Chapter 23 
++ 5/1:  Provided Materials
++ 5/9:  Final Exam Due
+\pagebreak
+{\bf A Note on Spreadsheet Design:}  You should construct your spreadsheet as if you were an analyst at a company, and you were going to submit the spreadsheet to upper management.  Therefore, getting the correct answer can be considered the minimal amount of work.  The spreadsheet should be easily readable and organized.  There are a couple of reasons why this is important: (1) management often will check some numbers (or maybe change a few inputs if they have more up to date information) and it will reflect very poorly on you if they have to search around through a muddled and ill-conceived spreadsheet; and (2) anyone should be able to pick up your spreadsheet and complete it if you are not there (vacation, sick, or hopefully promoted).  Following are a couple tips on spreadsheet design, though it is far from exhaustive.\\
+
+ + Hard-code as little as possible.  You want a few cells for your inputs, or a place where you put your data, and then every other cell is linked and feeds off of these input cells. This way, to update your spreadsheet you simply change the inputs or drop in new data.  
++ Take the time to label cells, and put in appropriate comments if necessary  - though comments should not be used excessively. Also, it is common to change the cell color depending on whether it is hard-coded (an input) or a formula.  This way you (or anyone else) can immediately look at a cell and tell whether it is one in which you can type (an input).  Don't forget to include a key.
++ It is often better to add tabs to a spreadsheet than continue calculations on one tab.  You can easily page through spreadsheet tabs with `Ctrl+Shift' and `Page-up' or `Page-down'.  
++ Pivot tables.  While we probably won't need them in this course, you should nonetheless get to know them.  Pivot tables are incredibly useful for summarizing data, and it is very possible you will be asked in an interview whether you are familiar with them.  Similarly, get to know VLOOKUP.
++  If you are inputting a long formula, then break the calculation into multiple cells.  This makes it much easier to tell where a mistake was made - and everyone always spends a fair amount of time looking for errors. 
++ Excel has many built in formulas which can be useful, however it is important that you understand what the formula is doing to use them.  Blindly applying a formula can lead to trouble.  For example, if you use the IRR() function on cash flows with multiple roots, the formula will return the first root it finds without signaling to you that there are other roots.  Also, there are Excel formulas that are flat out incorrect - in particular the NPV() function.  So, use a function if it saves time, but first be sure you know what the function is doing and verify it works.  That said, in my experience it is better (and faster) to input your own formula instead of using Excel's.  You often have to break the calculation into a couple of steps, but this can be done quickly, and the result is a spreadsheet that you know works and is easily auditable. 
+
+

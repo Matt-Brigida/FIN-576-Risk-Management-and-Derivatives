@@ -1,0 +1,24 @@
+---
+title: Bond Portfolio Immunization
+author: Matt Brigida, Ph.D.
+Output: html_document
+---
+
+
+### Assets
+
+Mortgages
+
+-  Fixed rate, 15 year, rate: 8\% 
+
+-  Floating rate, 15 year, rate: LIBOR + 2%
+
+### Liabilities
+
+-  2 year CD
+
+-  3 year CD
+
+### Steps
+
+1.  Calculate duration of mortgages

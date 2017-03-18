@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title></title>
+<!-- 2017-01-03 Tue 21:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Matthew Brigida, Ph.D." />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title"></h1>
+<div class="center">
+<p>
+CLARION UNIVERSITY OF PENNSYLVANIA<br  />
+COLLEGE OF BUSINESS ADMINISTRATION<br  />
+DEPARTMENT OF FINANCE
+\\
+<b>Risk Management and Derivatives</b> \\
+<b>FIN  576</b>\\
+<b>Spring 2016</b>\\
+</p>
+</div>
+
+<p>
+\vspace{6.5pt}
+<b>Instructor:</b> Dr. Matthew Brigida<br  />
+<b>Office</b> online<br  />
+<b>Office Hours:</b>  Online:  Monday, Tuesday, and Wednesday, 1:00&#x2014;2:45pm <br  />
+<b>Email:</b>  \textcolor{blue}{mbrigida@clarion.edu} <br  />
+<b>Course Day/Time:</b> online<br  />
+\\
+<b>Class Location:</b> online <br  />
+\\
+<b>Text:</b> <i>Investments</i>, by Bodie, Kane, and Marcus, 8th edition, ISBN:  978-0-07-338237-1 <br  />
+\hspace*{20pt} **However, you are free to use earlier editions (my original lecture notes are from the 6th edition which you can buy used (for less than \$10) on Amazon, ISBN: 0072861789)<br  />
+</p>
+<div class="center">
+<p>
+{\bf COURSE DESCRIPTION}
+</p>
+</div>
+<p>
+An introductory survey to the fundamental principles of managing risk, including through the use of derivative contracts. The learning outcomes for this course are summarized below:
+</p>
+\begin{enumerate}
+\item Understanding how to measure and report risk.
+\item Understand fundamental approaches to managing differing types of risk, including the use of derivative contracts.
+\item 
+\item 
+\item 
+\end{enumerate}
+<div class="center">
+<p>
+{\bf ACADEMIC HONESTY POLICY}
+</p>
+</div>
+<p>
+Academic dishonesty will not be tolerated in this class. Cheating
+on quizzes, examinations, and other forms of dishonesty (e.g., plagiarism, collusion, and
+falsification of data) will be dealt with in a serious and formal manner. The penalty for academic
+dishonesty in this class will be course failure. That is, any student who is found to be cheating
+or engaged in other academically dishonest behavior will be failed for this course for this
+semester. Course withdrawals to avoid such a failure will not be permitted. As a student, you
+have a responsibility to become familiar with the Academic Honesty Policy found in the Student
+Rights, Regulations, and Procedures Handbook.<br  />
+</p>
+<div class="center">
+<p>
+{\bf BSBA LEARNING GOALS \&amp; OBJECTIVES}
+</p>
+</div>
+\begin{itemize}
+\item Goal 1.0: Demonstrate Business Disciplinary Competence.  Assessed by: The exams, homeworks and projects will evaluate a core area of finance: Managing risk.
+\item Goal 3.0 (Objectives 3.1 and 3.2):  Communicate Effectively Orally and in Written Form.  Assessed by: The presentations of student created optimal risky portfolios and pairs trades.
+\item Goal 4.0 (Objectives 4.1 and 4.3): Demonstrate Analytical Thinking Skills.  Assessed by: Students will analytically optimize portfolios to earn maximum expected return for a each given level of risk..
+\item Goal 5.0: Understand Global Issues in the Functional Areas of Business.  Assessed by: Understanding and implementing international diversification in investment portfolios. This is evaluated through the exams, homeworks, and projects.
+\item Goal 6.0 (Objectives 6.1 and 6.3):  Demonstrate Effective Use of Technology and Data Analysis.  Assessed by: In both homeworks and the presentation, students will analyze data and communicate conclusions using real-time financial trading software (FTS) and Excel. 
+\end{itemize}
+<div class="center">
+<p>
+<b>EXAMS</b>
+</p>
+</div>
+<p>
+There will be two take-home exams (a midterm and a final). The exams will mainly be comprised of short-answer questions, computations, and simple proofs.  More involved questions will be worth more points.  <br  />
+\\
+<b>Exam Rules</b><br  />
+\\
+You may discuss the exam with other students.  In fact, such discussions will help you understand the material, and are therefore encouraged.  You must write-up your exam on your own however.  If you simply copy another students' work, you will receive a 0.
+</p>
+<div class="center">
+<p>
+<b>DISCUSSION</b>
+</p>
+</div>
+<p>
+There will be a discussion board for each two week period.  I'll post the discussion questions/topics by Sunday evening, and you'll have until 2pm on the second following Sunday to post your response.  You are required to make one post per week.  There may be fewer questions than students in the course, so you should feel free to respond to other students' posts.  Just be sure to improve their answer&#x2014;add relevant information or examples.  Don't just write ``Great post!''.  
+</p>
+<div class="center">
+<p>
+<b>*PROJECTS</b>
+</p>
+</div>
+<p>
+Project 1: Optimal risky portfolios<br  />
+Project 2:  Pairs trading
+</p>
+<div class="center">
+<p>
+<b>COURSE COMMUNICATION</b>
+</p>
+</div>
+<p>
+All important/official announcements will be posted on Blackboard and emailed to each student's Clarion University email account.  I will post helpful information to: \href{http://www.complete-markets.com}{\textcolor{blue}{Complete Markets}}. To see information relating to your course type "FIN 476" in the search bar at the upper left of the web page.  Some examples of helpful information are spreadsheets which assist in studying for exams or completing discussion posts, answers to questions other students have asked (of course I will not include who asked the question), and useful R code.
+</p>
+<div class="center">
+<p>
+<b>GRADING:</b><br  />
+Project 1 &#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;   20<br  />
+</p>
+
+<p>
+Project 2 &#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;  20<br  />
+</p>
+
+<p>
+Discussion &#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;.   30<br  />
+</p>
+
+<p>
+Midterm &#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;.    15<br  />
+</p>
+
+<p>
+Final Exam &#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;..   15<br  />
+</p>
+
+<p>
+Total Points &#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;&#x2026;  100<br  />
+</p>
+</div>
+<div class="center">
+<p>
+<b>Final grades will be assigned according to the following scale:</b>
+</p>
+</div>
+
+<ul class="org-ul">
+<li>90 - 100 A
+</li>
+<li>80 - 89.9 B
+</li>
+<li>70 - 79.9 C
+</li>
+<li>60 - 69.9 D
+</li>
+<li>\(<\) 60 F
+</li>
+</ul>
+
+<div class="center">
+<p>
+<b>GENERAL NOTES:</b>
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Attending class, and reading the text is required.
+</li>
+<li>All exams will be open book.
+</li>
+<li>There will be no make up exams or extra points assignments.
+</li>
+<li>Cheating will result in prosecution to the fullest extent possible under university rules.
+</li>
+<li>You will be responsible for any material covered in class that is not in your text.
+</li>
+<li>You should bring your text to class.
+</li>
+<li>You are expected to be on time for class. 
+</li>
+<li>{\bf Adding or Dropping the Course:}  To add or drop the course the student should consult the university guidelines and withdrawal dates.  The course instructor is not involved in a student's adding or withdrawing from the course.
+</li>
+</ul>
+
+<p>
+\pagebreak
+</p>
+<div class="center">
+<p>
+<b>TENTATIVE OUTLINE</b>
+</p>
+</div>
+<ul class="org-ul">
+<li>1/25:  Chapter 5
+</li>
+<li>2/1: Chapter 5 and 6
+</li>
+<li>2/8:  Chapter 6 and 7
+</li>
+<li>2/15: Chapter 7 (start project 1: Markowitz portfolio)
+</li>
+<li>2/22: Chapter 8
+</li>
+<li>2/29: Project 1
+</li>
+<li>3/7: Winter Break 
+</li>
+<li>3/14: Project 1/Midterm
+</li>
+<li>3/21: Chapter 9
+</li>
+<li>3/28: Chapter 10  (start project 2:  the Pairs trade)
+</li>
+<li>4/4:  Pairs trade lecture, Chapter 11
+</li>
+<li>4/11: Chapter 24
+</li>
+<li>4/18:  Chapter 25
+</li>
+<li>4/25:  Project 2
+</li>
+<li>5/2:  Project 2
+</li>
+<li>5/9:  Final Exam Due
+</li>
+</ul>
+<p>
+\pagebreak
+{\bf A Note on Spreadsheet Design:}  You should construct your spreadsheet as if you were an analyst at a company, and you were going to submit the spreadsheet to upper management.  Therefore, getting the correct answer can be considered the minimal amount of work.  The spreadsheet should be easily readable and organized.  There are a couple of reasons why this is important: (1) management often will check some numbers (or maybe change a few inputs if they have more up to date information) and it will reflect very poorly on you if they have to search around through a muddled and ill-conceived spreadsheet; and (2) anyone should be able to pick up your spreadsheet and complete it if you are not there (vacation, sick, or hopefully promoted).  Following are a couple tips on spreadsheet design, though it is far from exhaustive.<br  />
+</p>
+
+<ul class="org-ul">
+<li>Hard-code as little as possible.  You want a few cells for your inputs, or a place where you put your data, and then every other cell is linked and feeds off of these input cells. This way, to update your spreadsheet you simply change the inputs or drop in new data.  
+</li>
+<li>Take the time to label cells, and put in appropriate comments if necessary  - though comments should not be used excessively. Also, it is common to change the cell color depending on whether it is hard-coded (an input) or a formula.  This way you (or anyone else) can immediately look at a cell and tell whether it is one in which you can type (an input).  Don't forget to include a key.
+</li>
+<li>It is often better to add tabs to a spreadsheet than continue calculations on one tab.  You can easily page through spreadsheet tabs with `Ctrl+Shift' and `Page-up' or `Page-down'.  
+</li>
+<li>Pivot tables.  While we probably won't need them in this course, you should nonetheless get to know them.  Pivot tables are incredibly useful for summarizing data, and it is very possible you will be asked in an interview whether you are familiar with them.  Similarly, get to know VLOOKUP.
+</li>
+<li>If you are inputting a long formula, then break the calculation into multiple cells.  This makes it much easier to tell where a mistake was made - and everyone always spends a fair amount of time looking for errors. 
+</li>
+<li>Excel has many built in formulas which can be useful, however it is important that you understand what the formula is doing to use them.  Blindly applying a formula can lead to trouble.  For example, if you use the IRR() function on cash flows with multiple roots, the formula will return the first root it finds without signaling to you that there are other roots.  Also, there are Excel formulas that are flat out incorrect - in particular the NPV() function.  So, use a function if it saves time, but first be sure you know what the function is doing and verify it works.  That said, in my experience it is better (and faster) to input your own formula instead of using Excel's.  You often have to break the calculation into a couple of steps, but this can be done quickly, and the result is a spreadsheet that you know works and is easily auditable. 
+</li>
+</ul>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Matthew Brigida, Ph.D.</p>
+<p class="date">Created: 2017-01-03 Tue 21:19</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
