@@ -4,6 +4,9 @@ author: Matt Brigida, Ph.D.
 Output: html_document
 ---
 
+## Immunize a Bank's Portfolio
+
+Assume a bank has the following (very simplified) balance sheet.  
 
 ### Assets
 
@@ -15,9 +18,9 @@ Mortgages
 
 ### Liabilities
 
--  2 year CD
+-  2 year CD, rate: 2\%
 
--  3 year CD
+-  3 year CD, rate: 4\%
 
 ### Steps
 
