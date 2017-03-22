@@ -14,14 +14,18 @@ Mortgages
 
 -  Fixed rate, 15 year, rate: 8\% 
 
--  Floating rate, 15 year, rate: LIBOR + 2%
+-  Floating rate, 15 year, rate: LIBOR + 2%,  (duration = 0)
 
 ### Liabilities
+
+-  Overnight deposits, rate: 0.6%, (duration = 0)
 
 -  2 year CD, rate: 2\%
 
 -  3 year CD, rate: 4\%
 
-### Steps
+### Assignment
 
-1.  Calculate duration of mortgages
+1.  Calculate weights which will immunize the portfolio.  Note this is a set of weights, there is not one unique solution.  You don't have to calculate the full set, just some set of weights which immunizes the portfolio.
+
+2.  Now say you can only invest 50% of your assets in floating rate mortgages.  What is the minimum amount of interest rate risk you can have?  What will happen to the value of your portfolio if interest rates increase by 1\%?
