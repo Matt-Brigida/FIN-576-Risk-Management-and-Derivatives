@@ -20,9 +20,9 @@ Mortgages
 
 -  Overnight deposits, rate: 0.6%, (duration = 0)
 
--  2 year CD, rate: 2\%
+-  2 year CD, rate: 2\%, assume it is a zero coupon
 
--  3 year CD, rate: 4\%
+-  3 year CD, rate: 4\%, assume it is a zero coupon
 
 ### Assignment
 
